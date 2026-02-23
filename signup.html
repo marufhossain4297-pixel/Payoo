@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo | SignUp</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- tailwind and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+</head>
+
+
+<body class="min-h-screen max-w-md bg-[#f4f5f7] mx-auto">
+    <section>
+        <div class="logo w-[200px] mx-auto pt-[50px]">
+            <img src="./images/Logo-full.png" alt="">
+        </div>
+    </section>
+
+    <section class="w-11/12 mx-auto py-8 space-y-3 text-center">
+        <h2 class="text-[24px] font-bold">Welcome to Pay<span class="text-primary">oo</span> <br> <span
+                class="text-primary">signup</span></h2>
+    </section>
+
+    <section id="personal-info" class="w-11/12 mx-auto py-5">
+        <h2 class="font-bold mb-5 text-xl">Personal info</h2>
+        <div class="card bg-base-100 w-full shadow rounded-3xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-medium text-[16px]">First Name</label>
+                    <input id="first-name" type="text" maxlength="4" minlength="4"
+                        class="input rounded-full bg-[#F4F5F7] w-full" placeholder="Avik" />
+
+                    <br>
+
+                    <label class="label text-neutral font-medium text-[16px]">Last Name</label>
+                    <input maxlength="4" minlength="4" id="last-name" type="text"
+                        class="input rounded-full bg-[#F4F5F7] w-full" placeholder="Anik" />
+                    <br>
+
+                    <label class="label text-neutral font-medium text-[16px]">Date of Birth</label>
+                    <input maxlength="10" minlength="10" id="date-of-birth" type="text" maxlength="10" minlength="10"
+                        class="input rounded-full bg-[#F4F5F7] w-full" placeholder="01/01/2000" />
+                    <br>
+
+                    <label class="label text-neutral font-medium text-[16px]">Phone Number</label>
+                    <input id="phone-number" type="text" minlength="11" maxlength="11"
+                        class="input rounded-full bg-[#F4F5F7] w-full" placeholder="01234567890" />
+                    <br>
+
+                    <label class="label text-neutral font-medium text-[16px]">E-mail</label>
+                    <input maxlength="18" minlength="18" id="email" type="email"
+                        class="input rounded-full bg-[#F4F5F7] w-full" placeholder="avikanik@gmail.com" />
+                    <br>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-11/12 mx-auto py-5">
+        <h2 class="font-bold mb-5 text-xl">Address</h2>
+
+        <section class="bg-white p-6 space-y-5 rounded-[24px]">
+            <label class="label text-neutral font-medium text-[16px]">Street Address</label>
+            <input maxlength="18" minlength="18" id="street-address" type="text"
+                class="input rounded-full bg-[#F4F5F7] w-full" placeholder="Boshundora, Dhaka" />
+            <br>
+
+            <label class="label text-neutral font-medium text-[16px]">Street Address Line 2<span
+                    class="text-[13px] text-gray-600">(Optional)</span></label>
+            <input maxlength="30" id="street-address-line-2" type="text" class="input rounded-full bg-[#F4F5F7] w-full"
+                placeholder="Optional" />
+            <br>
+
+            <div class="flex gap-3">
+                <div class="flex flex-col">
+                    <label class="label text-neutral font-medium text-[16px] pb-3">County</label>
+                    <input maxlength="10" id="county" type="text" class="input rounded-full bg-[#F4F5F7] w-full"
+                        placeholder="Bangladesh" />
+                    <br>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="label text-neutral font-medium text-[16px] pb-3">City</label>
+                    <input maxlength="5" id="city" type="text" class="input rounded-full bg-[#F4F5F7] w-full"
+                        placeholder="Dhaka" />
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="flex gap-1.5">
+                <div class="flex flex-col">
+                    <label class="label text-neutral font-medium text-[16px] pb-3">State / Province</label>
+                    <input maxlength="5" id="state" type="text" class="input rounded-full bg-[#F4F5F7] w-full"
+                        placeholder='Dhaka' />
+                </div>
+
+                <br>
+
+                <div class="flex flex-col">
+                    <label class="label text-neutral font-medium text-[16px] pb-3">Postal / Zip Code</label>
+                    <input id="postal" type="text" maxlength="5" minlength="5"
+                        class="input rounded-full bg-[#F4F5F7] w-full" placeholder="12345" />
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+
+    <section id="account-info" class="w-11/12 mx-auto pb-3">
+        <h2 class="font-bold mb-5 text-xl">Account</h2>
+        <div class="card bg-base-100 w-full shadow rounded-3xl">
+            <div class="card-body">
+                <fieldset id="account" class="fieldset space-y-3">
+
+                    <label class="label text-neutral font-medium text-[16px]">Account type</label>
+                    <select id="type" class="select appearance-none w-full rounded-full">
+                        <option disabled selected>Select your account type</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Business">Business</option>
+                    </select>
+
+                    <label class="label text-neutral font-medium text-[16px]">Your monthly saveing</label>
+                    <select id="saveing" class="select appearance-none w-full rounded-full">
+                        <option disabled selected>Select your monthly saveing</option>
+                        <option value="0 - 5000৳">0 - 5000৳</option>
+                        <option value="5000 - 10000৳">5000 - 10000৳</option>
+                        <option value="10000 - 15000৳">10000 - 15000৳</option>
+                        <option value="15000 - 20000৳">15000 - 20000৳</option>
+                        <option value="20000 - 25000৳">20000 - 25000৳</option>
+                        <option value="25000 - 30000৳">25000 - 30000৳</option>
+                        <option value="Above the 30000৳">Above the 30000৳</option>
+                    </select>
+
+                    <label class="label text-neutral font-medium text-[16px]">What do you went to use Payoo</label>
+                    <select id="what" class="select appearance-none w-full rounded-full">
+                        <option disabled selected>Select what do you went to use Payoo</option>
+                        <option value="Transfer">Transfer</option>
+                        <option value="Saveing">Saveing</option>
+                        <option value="Online shopping">Online shopping</option>
+                        <option value="Crypto">Crypto</option>
+                        <option value="Glovel transfer">Glovel transfer</option>
+                        <option value="Online investment">Online investment</option>
+                        <option class="Exchange">Exchange</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset class="fieldset w-full pl-4 pt-4">
+                    <label class="label text-[14px]">
+                        <input type="checkbox" class="checkbox" />I accept the Privacy & Cookie Policy and <br> the Terms & Conditions.</label>
+                </fieldset>
+
+                <fieldset class="fieldset w-full p-4">
+                    <label class="label text-[14px]">
+                        <input type="checkbox" class="checkbox" />I agree to receive account updates, product
+                        news,<br>andpromotional messages by emails.
+                    </label>
+                </fieldset>
+
+
+
+                <button id="signup-btn" class="btn btn-primary mt-4 rounded-full w-full">Next <i class="fa-solid fa-arrow-right" style="color: rgb(255, 255, 255);"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script/machine.js"></script>
+    <script src="./script/signup.js"></script>
+</body>
+
+</html>
