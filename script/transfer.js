@@ -33,7 +33,7 @@ document.getElementById('transfer-btn')
             return;
         }
 
-        const history = document.getElementById('history')
+        const historyContainer = document.getElementById("history-container");
 
         const newHistory = document.createElement('div')
 
@@ -66,10 +66,11 @@ document.getElementById('transfer-btn')
                 <p class = "text-[16px] font-semibold mt-[10px] ml-[80px] text-[#525252] absoluten top-[-1px] ">Transfer</p>
                 <div class="flex items-center">
                     <img class="w-[45px] h-[45px] mx-[16px] mb-[13px]" src="./images/wallet 3.png" alt="">
-                    <p class="self-center text-[12px] text-[#525252] mt-[5px] mb-[6px]"><span class = "font-medium text-[13px]">Transfar successful ✅</span><br> Account Number: ${transferNumberInput} <br> Amonut: <span class = "text-[#EF4444] font-semibold text-[13px]">-${tranferAmount} $</span> <br> Date: ${formattedDate} </p>
+                    <p class="self-center text-[12px] text-[#525252] mt-[5px] mb-[16px]"><span class = "font-medium text-[13px]">Transfar successful ✅</span><br> Account Number: ${transferNumberInput} <br> Amonut: <span class = "text-[#EF4444] font-semibold text-[13px]">-${tranferAmount} $</span> <br> Date: ${formattedDate} </p>
                 </div>
             </div>
             <br>
     `
-        history.append(newHistory)
+        historyContainer.append(newHistory);
+        checkTransactionState();
     })

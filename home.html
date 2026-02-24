@@ -52,27 +52,33 @@
         </p>
 
         <div class="buttons grid grid-cols-3 gap-3">
-            <button id="header-add" onclick="showOnly('add-money'), color('header-add')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
+            <button id="header-add" onclick="showOnly('add-money'), color('header-add')"
+                class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button id="header-cashout" onclick="showOnly('chackout'), color('header-cashout')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
+            <button id="header-cashout" onclick="showOnly('chackout'), color('header-cashout')"
+                class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
-            <button id="header-tranfer" onclick="showOnly('transfer'), color('header-tranfer')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
+            <button id="header-tranfer" onclick="showOnly('transfer'), color('header-tranfer')"
+                class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-3.png" alt="">
                 <p>Transfer Money</p>
             </button>
-            <button id="header-bonus" onclick="showOnly('bonus'), color('header-bonus')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
+            <button id="header-bonus" onclick="showOnly('bonus'), color('header-bonus')"
+                class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-4.png" alt="">
                 <p>Get Bonus</p>
             </button>
-            <button id="header-bill" onclick="showOnly('bill'), color('header-bill')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
+            <button id="header-bill" onclick="showOnly('bill'), color('header-bill')"
+                class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
-            <button id="header-trasition" onclick="showOnly('history'), color('header-trasition')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
+            <button id="header-trasition" onclick="showOnly('history'), color('header-trasition')"
+                class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
@@ -98,58 +104,64 @@
         <h2 class="font-bold mb-5">Latest Payment</h2>
 
         <div class="card bg-base-100 w-full shadow rounded-3xl flex hover:shadow-2xl cursor-pointer">
-            <div class="card-body">
-                <div class="flex">
+            <div class="card-body  mb-[20px]">
+                <div class="flex relative top-[15px]">
                     <img src="./images/wallet 1.png" alt="">
-                    <p class="font-semibold text-[16px] text-[#525252] ml-[15px]">Add Money</p>
                 </div>
-                <p class="mt-[-30px] ml-[60px] text-[12px] text-[#525252]">Today 01:44 AM</p>
-            </div>
-        </div>
-        
-        <div class="card bg-base-100 w-full shadow rounded-3xl hover:shadow-2xl cursor-pointer">
-            <div class="card-body">
-                <div class="flex">
-                    <img src="./images/wallet 2.png" alt="">
-                    <p class="font-semibold text-[16px] text-[#525252] ml-[15px]">Pay Bill</p>
+                <div class="flex flex-col absolute top-[20px] left-[69px]">
+                    <p class="font-semibold text-[16px] text-[#525252] ml-[20px]">AddMoney</p>
+                        <p class="mt-[-30px] ml-[20px] text-[12px] text-[#525252] relative top-[30px]">IFIC<br> Amount: <span class="text-[#2dc653] font-semibold text-[13px]">+43235$</span> <br> Date: Tue 24 Feb 2026 9:37:19 PM</p>
                 </div>
-                <p class="mt-[-30px] ml-[60px] text-[12px] text-[#525252]">Wed, 11 Fed 12: 33 PM</p>
-            </div>
+                </div>
         </div>
 
-        <div class="card bg-base-100 w-full shadow rounded-3xl hover:shadow-2xl cursor-pointer">
-            <div class="card-body">
-                <div class="flex">
-                    <img src="./images/wallet 3.png" alt="">
-                    <p class="font-semibold text-[16px] text-[#525252] ml-[15px]">Transfer Money</p>
-                </div>
-                <p class="mt-[-30px] ml-[60px] text-[12px] text-[#525252]">Mon, 20 Dec 15: 35 PM</p>
-            </div>
-        </div>
-
-
-        <div class="card bg-base-100 w-full shadow rounded-3xl hover:shadow-2xl cursor-pointer">
-            <div class="card-body">
-                <div class="flex">
+        <div class="card bg-base-100 w-full shadow rounded-3xl flex hover:shadow-2xl cursor-pointer">
+            <div class="card-body  mb-[20px]">
+                <div class="flex relative top-[15px]">
                     <img src="./images/wallet 1.png" alt="">
-                    <p class="font-semibold text-[16px] text-[#525252] ml-[15px]">Bonus</p>
                 </div>
-                <p class="mt-[-30px] ml-[60px] text-[12px] text-[#525252]">Sat, 15 Jun 8: 05 AM</p>
-            </div>
+                <div class="flex flex-col absolute top-[20px] left-[69px]">
+                    <p class="font-semibold text-[16px] text-[#525252] ml-[20px]">Transfer</p>
+                        <p class="mt-[-30px] ml-[20px] text-[12px] text-[#525252] relative top-[30px]">Transfar successful ✅ <br> Amount: <span class="text-[#EF4444] font-semibold text-[13px]">-500 $</span> <br>Date: Tue 24 Feb 2026 10:04:23 PM</p>
+                </div>
+                </div>
         </div>
 
-
-        <div class="card bg-base-100 w-full shadow rounded-3xl hover:shadow-2xl cursor-pointer">
-            <div class="card-body">
-                <div class="flex">
-                    <img src="./images/wallet 2.png" alt="">
-                    <p class="font-semibold text-[16px] text-[#525252] ml-[15px]">Chackout</p>
+        <div class="card bg-base-100 w-full shadow rounded-3xl flex hover:shadow-2xl cursor-pointer">
+            <div class="card-body  mb-[20px]">
+                <div class="flex relative top-[15px]">
+                    <img src="./images/wallet 1.png" alt="">
                 </div>
-                <p class="mt-[-30px] ml-[60px] text-[12px] text-[#525252]">Fri, 09 Apr 16: 55 PM</p>
-            </div>
+                <div class="flex flex-col absolute top-[20px] left-[69px]">
+                    <p class="font-semibold text-[16px] text-[#525252] ml-[20px]">Bonus</p>
+                        <p class="mt-[-30px] ml-[20px] text-[12px] text-[#525252] relative top-[30px]">Congratulation, you got the bonus ✅ <br> Amount: <span class="text-[#2dc653] font-semibold text-[13px]">+1000$</span> <br> Date: Tue 24 Feb 2026 9:37:19 PM</p>
+                </div>
+                </div>
         </div>
 
+        <div class="card bg-base-100 w-full shadow rounded-3xl flex hover:shadow-2xl cursor-pointer">
+            <div class="card-body  mb-[20px]">
+                <div class="flex relative top-[15px]">
+                    <img src="./images/wallet 1.png" alt="">
+                </div>
+                <div class="flex flex-col absolute top-[20px] left-[69px]">
+                    <p class="font-semibold text-[16px] text-[#525252] ml-[20px]">Pay Bill</p>
+                        <p class="mt-[-30px] ml-[20px] text-[12px] text-[#525252] relative top-[30px]">BillPay successful ✅<br> Amount: <span class="text-[#EF4444] font-semibold text-[13px]">194.23 $</span> <br> DDate: Tue 24 Feb 2026 10:06:56 PM</p>
+                </div>
+                </div>
+        </div>
 
+        <div class="card bg-base-100 w-full shadow rounded-3xl flex hover:shadow-2xl cursor-pointer">
+            <div class="card-body  mb-[20px]">
+                <div class="flex relative top-[15px]">
+                    <img src="./images/wallet 1.png" alt="">
+                </div>
+                <div class="flex flex-col absolute top-[20px] left-[69px]">
+                    <p class="font-semibold text-[16px] text-[#525252] ml-[20px]">CashOut</p>
+                        <p class="mt-[-30px] ml-[20px] text-[12px] text-[#525252] relative top-[30px]">Withdraw successful ✅ <br> Amount: <span class="text-[#EF4444] font-semibold text-[13px]">-5000 $</span> <br> Date: Tue 24 Feb 2026 10:05:46 PM</p>
+                </div>
+                </div>
+        </div>
 
     </section>
 
@@ -280,12 +292,15 @@
     </section>
 
     <section id="history" class="w-11/12 mx-auto py-5 hidden">
-        <h2 class="font-bold mb-5">Transaction History</h2>
-        <div class="flex" id="history-container">
-            <div class="card bg-base-100 w-full shadow rounded-3xl flex">
-                <div class="flex">
-                </div>
-            </div>
+        <h2 class="font-bold mb-5">Transactions History</h2>
+        <!-- Empty State -->
+        <div id="empty-history" class="text-center w-11/12 bg-white mx-auto mb-[30px] rounded-2xl">
+            <img class="w-[200px] mx-auto" src="./images/bill.png" alt="">
+            <h2 class="font-bold text-[24px] mt-4 pb-5">No Transactions</h2>
+        </div>
+
+        <!-- Transactions Container -->
+        <div id="history-container" class="space-y-3 hidden">
         </div>
     </section>
 
@@ -295,6 +310,7 @@
     <script src="./script/transfer.js"></script>
     <script src="./script/bonus.js"></script>
     <script src="./script/pay.js"></script>
+    <script src="./script/history.js"></script>
 </body>
 
 </html>
