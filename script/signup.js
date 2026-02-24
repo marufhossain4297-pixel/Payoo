@@ -43,30 +43,36 @@ document.getElementById('signup-btn')
         const postal = document.getElementById('postal');
         const postalValue = postal.value;
         console.log(postalValue);
-        
-        if(firstNameValue == 'Avik' && lastNameValue == 'Anik' && datOfBirthValue == '01/01/2000' &&  phoneNumberValue == '01234567890' && emailInputValue == 'avikanik@gmail.com' && streetAddressValue == 'Boshundora, Dhaka' && countyValue == 'Bangladesh' && cityValue == 'Dhaka' && stateValue == 'Dhaka' && postalValue == '12345' ){
+
+        if (firstNameValue == 'Avik' && lastNameValue == 'Anik' && datOfBirthValue == '01/01/2000' && phoneNumberValue == '01234567890' && emailInputValue == 'avikanik@gmail.com' && streetAddressValue == 'Boshundora, Dhaka' && countyValue == 'Bangladesh' && cityValue == 'Dhaka' && stateValue == 'Dhaka' && postalValue == '12345') {
             // alert('SignUp succses ✅')
         }
-        
-        else{
+
+        else {
             alert('Please complete with your information')
             return;
         }
         const typeAccount = getValueFromInput('type')
-        if(typeAccount == 'Select your account type'){
+        if (typeAccount == 'Select your account type') {
             alert('Please selct your "Account type"')
             return
         }
-        
+
         const monthlyIncome = getValueFromInput('saveing')
-        if(monthlyIncome == 'Select your monthly saveing'){
+        if (monthlyIncome == 'Select your monthly saveing') {
             alert('Please selct your "Monthly saveing"')
             return
         }
-        
+
         const usePayoo = getValueFromInput('what')
-        if(usePayoo == 'Select what do you went to use Payoo.'){
-            alert('Please selct your "What do you went to use Payoo"')
+        if (usePayoo == 'Select what do you went to use Payoo') {
+            alert('Please selct your "What do you went to use Payoo')
+            return
+        }
+
+        const privacy = document.getElementById('privacy')
+        if(!privacy.checked){
+            alert('Please accept the Privacy & Conditions')
             return
         }
         alert('Congratulation, your first is step done 👍')

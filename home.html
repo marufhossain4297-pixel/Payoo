@@ -46,33 +46,33 @@
         </section>
     </header>
 
-    <section class="w-11/12 mx-auto py-8 space-y-5">
+    <section class="w-full px-7 mx-auto py-11 space-y-5 bg-white">
         <h2 class="text-[24px] font-bold">Welcome to Pay<span class="text-primary">oo</span></h2>
         <p class="text-[#080808]/50">Enjoy easy and convenient financial services with us. Cashout charge is low and
         </p>
 
         <div class="buttons grid grid-cols-3 gap-3">
-            <button onclick="showOnly('add-money')" class="btn flex-col h-full py-[20px] rounded-xl">
+            <button id="header-add" onclick="showOnly('add-money'), color('header-add')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button onclick="showOnly('chackout')" class="btn flex-col h-full py-[20px] rounded-xl">
+            <button id="header-cashout" onclick="showOnly('chackout'), color('header-cashout')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
-            <button onclick="showOnly('transfer')" class="btn flex-col h-full py-[20px] rounded-xl">
+            <button id="header-tranfer" onclick="showOnly('transfer'), color('header-tranfer')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-3.png" alt="">
                 <p>Transfer Money</p>
             </button>
-            <button onclick="showOnly('bonus')" class="btn flex-col h-full py-[20px] rounded-xl">
+            <button id="header-bonus" onclick="showOnly('bonus'), color('header-bonus')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-4.png" alt="">
                 <p>Get Bonus</p>
             </button>
-            <button onclick="showOnly('bill')" class="btn flex-col h-full py-[20px] rounded-xl">
+            <button id="header-bill" onclick="showOnly('bill'), color('header-bill')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
-            <button onclick="showOnly('history')" class="btn flex-col h-full py-[20px] rounded-xl">
+            <button id="header-trasition" onclick="showOnly('history'), color('header-trasition')" class="btn bg-white flex-col h-[93px] py-[20px] rounded-xl">
                 <img src="./images/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
