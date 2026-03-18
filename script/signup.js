@@ -49,33 +49,97 @@ document.getElementById('signup-btn')
         }
 
         else {
-            alert('Please complete with your information')
+            const modalText = document.getElementById('modal-text')
+            modalText.innerHTML = `
+                <div class = "text-center">                
+                    <div class = "justify-self-center text-[70px] text-[#ED0000]">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <h1 class = "text-[25px] font-bold">Oops!</h1>
+                    <p>Please complete with your information</p>
+                </div>
+            `
+            document.getElementById('my_modal_4').showModal();
             return;
         }
         const typeAccount = getValueFromInput('type')
         if (typeAccount == 'Select your account type') {
-            alert('Please selct your "Account type"')
+            const modalText = document.getElementById('modal-text')
+            modalText.innerHTML = `
+                <div class = "text-center">
+                    <div class = "justify-self-center text-[60px] text-[#ED0000]">
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                    <h1 class = "text-[25px] font-bold">Oops!</h1>
+                    <p>Please selct your "Account type"</p>
+                </div>
+            `
+            document.getElementById('my_modal_4').showModal();
             return
         }
 
         const monthlyIncome = getValueFromInput('saveing')
         if (monthlyIncome == 'Select your monthly saveing') {
-            alert('Please selct your "Monthly saveing"')
+            const modalText = document.getElementById('modal-text')
+            modalText.innerHTML = `
+                <div class = "text-center">
+                    <div class = "justify-self-center text-[60px] text-[#ED0000]">
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                    <h1 class = "text-[25px] font-bold">Oops!</h1>
+                    <p>Please selct your "Monthly saveing"</p>
+                </div>
+            `
+            document.getElementById('my_modal_4').showModal();
             return
         }
 
         const usePayoo = getValueFromInput('what')
         if (usePayoo == 'Select what do you went to use Payoo') {
-            alert('Please selct your "What do you went to use Payoo')
+            const modalText = document.getElementById('modal-text')
+            modalText.innerHTML = `
+                <div class = "text-center">
+                    <div class = "justify-self-center text-[60px] text-[#ED0000]">
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                    <h1 class = "text-[25px] font-bold">Oops!</h1>
+                    <p>Please selct your "What do you went to use Payoo</p>
+                </div>
+            `
+            document.getElementById('my_modal_4').showModal();
             return
         }
 
         const privacy = document.getElementById('privacy')
         if(!privacy.checked){
-            alert('Please accept the Privacy & Conditions')
+            const modalText = document.getElementById('modal-text')
+            modalText.innerHTML = `
+                <div class = "text-center">
+                    <div class = "justify-self-center text-[60px] text-[#ED0000]">
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                    <h1 class = "text-[25px] font-bold">Oops!</h1>
+                    <p>Please accept the Privacy & Conditions</p>
+                </div>
+            `
+            document.getElementById('my_modal_4').showModal();
             return
         }
-        alert('Congratulation, your first is step done 👍')
-        window.location.assign('/password.html')
+        else{
+            const modalText = document.getElementById('modal-text')
+            modalText.innerHTML = `
+                <div class = "text-center">
+                    <div class = "justify-self-center text-[70px] text-[#198755]">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                    <h1 class = "text-[25px] font-bold">Congratulation!</h1>
+                    <p>Your first is step done 👍</p>
+                </div>
+            `
+            document.getElementById('my_modal_4').showModal();
+            setTimeout(() => {
+                window.location.href = 'password.html';
+            }, 1500);
+        }
 
     })

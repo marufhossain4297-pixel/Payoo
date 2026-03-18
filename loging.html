@@ -27,6 +27,8 @@
 
 
 <body class="min-h-screen max-w-md bg-[#f4f5f7] mx-auto">
+
+
     <section>
         <div class="logo w-[200px] mx-auto pt-[210px]">
             <img src="./images/Logo-full.png" alt="">
@@ -40,16 +42,30 @@
                         <input id="input-number" type="text" maxlength="11" minlength="11"
                             class="input rounded-full bg-[#F4F5F7]" placeholder="Enter your number"
                             value="01234567890" />
-                        
+
                         <label class="label text-neutral font-medium text-[16px] mt-[16px]">4 Digit Pin</label>
                         <input id="input-pin" type="password" maxlength="4" minlength="4"
                             class="input rounded-full bg-[#F4F5F7]" placeholder="Enter 4 Digit Pin" />
-                        <button id="loging-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
+                        <button id="loging-btn"
+                            class="btn btn-primary mt-4 rounded-full">Login</button>
                     </fieldset>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="modal" class="mx-auto">
+        <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+        <dialog id="my_modal_4" class="modal">
+            <div class="modal-box  max-w-sm">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <div id="modal-text"></div>
+            </div>
+        </dialog>
+    </section>
+
     <script src="./script/loging.js"></script>
 </body>
 
